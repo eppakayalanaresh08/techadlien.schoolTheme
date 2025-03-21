@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechAdlien School Themes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS -->
+    <style>
+        body {
+            background: #f0f4f8; /* Light grey-blue background */
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #243447; /* Darker grey-blue for text */
+            margin-bottom: 2rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position: relative;
+        }
+
+        h1::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            width: 50%;
+            height: 4px;
+            background: linear-gradient(45deg, #007bff, #6610f2); /* Blue and purple gradient */
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .theme-card {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .theme-card:hover {
+            transform: scale(1.05);
+        }
+
+        .theme-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .theme-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease, background 0.3s ease;
+            /* Gradient Background Animation */
+            background: linear-gradient(45deg, #007bff, #6610f2); /* Blue and purple */
+            background-size: 400% 400%;
+            animation: gradientBG 8s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+        .theme-card:hover .theme-overlay {
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.6); /* Darker background on hover */
+        }
+
+        .theme-overlay h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+            margin: 0;
+            transition: transform 0.3s ease;
+        }
+
+        .theme-card:hover .theme-overlay h3 {
+            transform: translateY(-10px);
+        }
+
+        /* Gradient Button Styles */
+        .gradient-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #fff;
+            background: linear-gradient(45deg, #007bff, #6610f2); /* Blue and purple */
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .gradient-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .gradient-button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>TechAdlien School Themes</h1>
+        <div class="row">
+            <!-- Theme 1 -->
+            <div class="col-md-4 mb-4">
+                <a href="theme-one/index.html" class="theme-card">
+                    <div class="theme-card">
+                        <img src="assets/one.png" alt="Theme 1" class="img-fluid">
+                        <div class="theme-overlay">
+                            <h3>School Theme 1</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="theme-one/index.html" class="gradient-button">Theme 1</a>
+            </div>
+            <!-- Theme 2 -->
+            <div class="col-md-4 mb-4">
+                <a href="theme-two/index.html" class="theme-card">
+                    <div class="theme-card">
+                        <img src="assets/two.png" alt="Theme 2" class="img-fluid">
+                        <div class="theme-overlay">
+                            <h3>School Theme 2</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="theme-two/index.html" class="gradient-button">Theme 2</a>
+            </div>
+            <!-- Theme 3 -->
+            <div class="col-md-4 mb-4">
+                <a href="theme-three/index.html" class="theme-card">
+                    <div class="theme-card">
+                        <img src="assets/three.png" alt="Theme 3" class="img-fluid">
+                        <div class="theme-overlay">
+                            <h3>School Theme 3</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="theme-three/index.html" class="gradient-button">Theme 3</a>
+            </div>
+
+
+            <div class="col-md-4 mb-4">
+                <a href="theme-four/index.html" class="theme-card">
+                    <div class="theme-card">
+                        <img src="assets/four.png" alt="Theme 4" class="img-fluid">
+                        <div class="theme-overlay">
+                            <h3>School Theme 4</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="theme-four/index.html" class="gradient-button">Theme 4</a>
+            </div>
+
+
+            <div class="col-md-4 mb-4">
+                <a href="theme-five/index.html" class="theme-card">
+                    <div class="theme-card">
+                        <img src="assets/five.png" alt="Theme 5" class="img-fluid">
+                        <div class="theme-overlay">
+                            <h3>School Theme 5</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="theme-five/index.html" class="gradient-button">Theme 5</a>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script> <!-- Link to your custom JavaScript -->
+    <script>
+        // Example: Alert on clicking a theme card
+        document.querySelectorAll('.theme-card').forEach(card => {
+            card.addEventListener('click', function() {
+                // alert('Theme card clicked!');
+            });
+        });
+    </script>
+</body>
+</html>
